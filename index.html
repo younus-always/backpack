@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Backpack House</title>
+    <!-- Icon: fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/5dd3ee4b2f.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- tailwind cdn and daisyUi-->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+          /** @type {import('tailwindcss').Config} */
+      module.exports = {
+          content: ["./src/**/*.{html,js}"],
+          theme: {
+            extend: {
+              colors: {
+                  text_primary: 'rgb(118, 194, 126)',
+              },
+              backgroundColor: {
+                  back: 'rgb(255, 255, 244)',
+              },
+            },
+          },
+          plugins: [],
+        }
+    </script>
+  </head>
+  <body>
+    <header class="bg-back">
+      <nav class="w-11/12 mx-auto flex items-center justify-between py-7">
+        <div class="w-8/12 sm:w-5/12">
+          <img class="w-60" src="./assets/Logo/Logo.png" alt="" />
+        </div>
+        <ul
+          class="items-center gap-10 text-lg font-semibold justify-end w-4/12 hidden sm:block sm:flex"
+        >
+          <li
+            class="hover:text-blue-500 transition-all ease-in-out duration-300"
+          >
+            <a href="#">Home</a>
+          </li>
+          <li
+            class="hover:text-blue-500 transition-all ease-in-out duration-300"
+          >
+            <a href="product.html">Product</a>
+          </li>
+          <li
+            class="hover:text-blue-500 transition-all ease-in-out duration-300"
+          >
+            <a href="#">Pages</a>
+          </li>
+          <li
+            class="hover:text-blue-500 transition-all ease-in-out duration-300"
+          >
+            <a href="contact.html">Contact</a>
+          </li>
+        </ul>
+        <i class="fa-solid fa-bars-staggered text-xl sm:hidden"></i>
+      </nav>
+
+      <!-- Banner section start -->
+      <section class="w-10/12 mx-auto sm:py-16 flex flex-col gap-7 md:flex-row">
+        <div class="flex-1 items-center space-y-4 mt-7 sm:mt-16">
+          <h1 class="sm:text-6xl text-4xl font-bold text-stone-700">
+            BackPack <br />
+            <span class="text-primary mt-3 block">Moon</span>
+          </h1>
+          <p class="sm:w-7/12 text-lg text-text_primary">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry.
+          </p>
+          <button
+            class="text-white bg-blue-600 flex items-center gap-1 sm:py-3 sm:px-4 py-2 px-3 rounded-lg hover:bg-blue-500 transition-all ease-in duration-200 active:scale-90"
+          >
+            <img
+              class="w-8"
+              src="./assets/Logo/shopping-cart 1.png"
+              alt=""
+            /><span class="text-lg font-semibold">Buy Now</span>
+          </button>
+        </div>
+        <div class="flex-1">
+          <img class="w-96" src="./assets/Photos/image 4.png" alt="" />
+        </div>
+      </section>
+      <!-- Banner section end -->
+    </header>
+
+    <main class="flex flex-col w-10/12 mx-auto">
+
+      <section
+        class="sm:py-20 flex items-center flex-col lg:flex-row gap-12 sm:gap-28 order-3 sm:order-1"
+      >
+        <div class="flex-1 space-y-3 sm:order-1 order-2 mb-6 sm:mb-0">
+          <div class="flex items-center gap-4 shadow-xl p-6 rounded-lg">
+            <div class="w-16">
+              <img
+                class="w-full"
+                src="./assets/Logo/image 12.png"
+                alt=""
+              />
+            </div>
+            <div class="space-y-1">
+              <h5 class="font-bold text-xl">Find the Perfect Fit</h5>
+              <p class="text-slate-600 font-semibold">
+                Everybody is different, which is why we offer styles for every
+                body.
+              </p>
+            </div>
+          </div>
+          <div class="flex items-center gap-4 shadow-xl p-6 rounded-lg">
+            <div class="w-16">
+              <img
+                class="w-full"
+                src="./assets/Logo/image 13.png"
+                alt=""
+              />
+            </div>
+            <div class="space-y-1">
+              <h5 class="font-bold text-xl">Free Exchanges</h5>
+              <p class="text-slate-600 font-semibold">
+                One of the many reasons you can shop with peace of mind.
+              </p>
+            </div>
+          </div>
+          <div class="flex items-center gap-4 shadow-xl p-6 rounded-lg">
+            <div class="w-16">
+              <img
+                class="w-full"
+                src="./assets/Logo/image 14.png"
+                alt=""
+              />
+            </div>
+            <div class="space-y-1">
+              <h5 class="font-bold text-xl">Contact Our Seller</h5>
+              <p class="text-slate-600 font-semibold">
+                They are here to help you. That's quite literally what we pay
+                them for.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="flex-1 sm:order-2 order-1">
+          <img class="" src="./assets/Logo/XMLID 1.png" alt="" />
+        </div>
+      </section>
+
+      <!-- section: Casual backpack start -->
+      <section class="order-1 sm:order-2">
+        <div>
+          <h3 class="text-4xl font-bold mt-10 sm:mt-0 mb-10 sm:mb-14">
+            Casual Backpack
+          </h3>
+        </div>
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 sm:gap-6">
+          <!-- Card -->
+          <div class="p-4 shadow-2xl rounded-lg group">
+            <div class="bg-gray-400 rounded-lg flex flex-col items-center">
+              <img
+                class="w-5/6 py-4 group-hover:scale-105 transition-transform duration-500 ease-in-out"
+                src="./assets/Photos/pngwing 1.png"
+                alt=""
+              />
+            </div>
+            <div class="space-y-2 mt-4">
+              <h4 class="text-2xl font-bold text-slate-800">
+                Nike Sportswear Hayward
+              </h4>
+              <p class="text-lg text-slate-600">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi
+                in, dignissimos, numquam
+              </p>
+              <div class="flex items-center justify-between py-2">
+                <span class="font-bold text-3xl text-green-500 block"
+                  >$234</span
+                >
+                <button
+                  class="text-white bg-green-600 flex items-center gap-1 sm:py-3 sm:px-4 py-2 px-3 rounded-lg hover:bg-green-500 transition-all ease-in duration-200 active:scale-90"
+                >
+                  <img
+                    class="w-6"
+                    src="./assets/Logo/shopping-cart 1.png"
+                    alt=""
+                  /><span class="text-md font-semibold">Buy Now</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- Card -->
+          <div class="p-4 shadow-2xl rounded-lg group">
+            <div class="bg-gray-400 rounded-lg flex flex-col items-center">
+              <img
+                class="w-5/6 py-4 group-hover:scale-105 transition-transform duration-500 ease-in-out"
+                src="./assets/Photos/image 5.png"
+                alt=""
+              />
+            </div>
+            <div class="space-y-2 mt-4">
+              <h4 class="text-2xl font-bold text-slate-800">School backpack</h4>
+              <p class="text-lg text-slate-600">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi
+                in, dignissimos, numquam
+              </p>
+              <div class="flex items-center justify-between py-2">
+                <span class="font-bold text-3xl text-green-500 block"
+                  >$234</span
+                >
+                <button
+                  class="text-white bg-green-600 flex items-center gap-1 sm:py-3 sm:px-4 py-2 px-3 rounded-lg hover:bg-green-500 transition-all ease-in duration-200 active:scale-90"
+                >
+                  <img
+                    class="w-6"
+                    src="./assets/Logo/shopping-cart 1.png"
+                    alt=""
+                  /><span class="text-md font-semibold">Buy Now</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- Card -->
+          <div class="p-4 shadow-2xl rounded-lg group">
+            <div class="bg-gray-400 rounded-lg flex flex-col items-center">
+              <img
+                class="w-5/6 py-4 group-hover:scale-105 transition-transform duration-500 ease-in-out"
+                src="./assets/Photos/image 16.png"
+                alt=""
+              />
+            </div>
+            <div class="space-y-2 mt-4">
+              <h4 class="text-2xl font-bold text-slate-800">
+                CityLite Security Backpack
+              </h4>
+              <p class="text-lg text-slate-600">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi
+                in, dignissimos, numquam
+              </p>
+              <div class="flex items-center justify-between py-2">
+                <span class="font-bold text-3xl text-green-500 block"
+                  >$234</span
+                >
+                <button
+                  class="text-white bg-green-600 flex items-center gap-1 sm:py-3 sm:px-4 py-2 px-3 rounded-lg hover:bg-green-500 transition-all ease-in duration-200 active:scale-90"
+                >
+                  <img
+                    class="w-6"
+                    src="./assets/Logo/shopping-cart 1.png"
+                    alt=""
+                  /><span class="text-md font-semibold">Buy Now</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- section: Casual backpack end -->
+
+      <!-- section: Travel backpack start -->
+      <section class="sm:py-36 py-24 order-2 sm:order-3">
+        <div>
+          <h3 class="text-4xl font-bold mb-10 sm:mb-14">Travel Backpack</h3>
+        </div>
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 sm:gap-6">
+          <!-- Card -->
+          <div class="p-4 shadow-2xl rounded-lg group">
+            <div class="bg-gray-400 rounded-lg flex flex-col items-center">
+              <img
+                class="w-5/6 py-4 group-hover:scale-105 transition-transform duration-500 ease-in-out"
+                src="./assets/Photos/travel-hiking 1.png"
+                alt=""
+              />
+            </div>
+            <div class="space-y-2 mt-4">
+              <h4 class="text-2xl font-bold text-slate-800">Travel Sport</h4>
+              <p class="text-lg text-slate-600">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi
+                in, dignissimos, numquam
+              </p>
+              <div class="flex items-center justify-between py-2">
+                <span class="font-bold text-3xl text-green-500 block"
+                  >$234</span
+                >
+                <button
+                  class="text-white bg-green-600 flex items-center gap-1 sm:py-3 sm:px-4 py-2 px-3 rounded-lg hover:bg-green-500 transition-all ease-in duration-200 active:scale-90"
+                >
+                  <img
+                    class="w-6"
+                    src="./assets/Logo/shopping-cart 1.png"
+                    alt=""
+                  /><span class="text-md font-semibold">Buy Now</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- Card -->
+          <div class="p-4 shadow-2xl rounded-lg group">
+            <div class="bg-gray-400 rounded-lg flex flex-col items-center">
+              <img
+                class="w-5/6 py-4 group-hover:scale-105 transition-transform duration-500 ease-in-out"
+                src="./assets/Photos/pngwing 2.png"
+                alt=""
+              />
+            </div>
+            <div class="space-y-2 mt-4">
+              <h4 class="text-2xl font-bold text-slate-800">
+                Jack Wolfskin West Highland
+              </h4>
+              <p class="text-lg text-slate-600">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi
+                in, dignissimos, numquam
+              </p>
+              <div class="flex items-center justify-between py-2">
+                <span class="font-bold text-3xl text-green-500 block"
+                  >$234</span
+                >
+                <button
+                  class="text-white bg-green-600 flex items-center gap-1 sm:py-3 sm:px-4 py-2 px-3 rounded-lg hover:bg-green-500 transition-all ease-in duration-200 active:scale-90"
+                >
+                  <img
+                    class="w-6"
+                    src="./assets/Logo/shopping-cart 1.png"
+                    alt=""
+                  /><span class="text-md font-semibold">Buy Now</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- Card -->
+          <div class="p-4 shadow-2xl rounded-lg group">
+            <div class="bg-gray-400 rounded-lg flex flex-col items-center">
+              <img
+                class="w-5/6 py-4 group-hover:scale-105 transition-transform duration-500 ease-in-out"
+                src="./assets/Photos/pngwing 3.png"
+                alt=""
+              />
+            </div>
+            <div class="space-y-2 mt-4">
+              <h4 class="text-2xl font-bold text-slate-800">
+                Hiking Trekking Bag Camping
+              </h4>
+              <p class="text-lg text-slate-600">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi
+                in, dignissimos, numquam
+              </p>
+              <div class="flex items-center justify-between py-2">
+                <span class="font-bold text-3xl text-green-500 block"
+                  >$234</span
+                >
+                <button
+                  class="text-white bg-green-600 flex items-center gap-1 sm:py-3 sm:px-4 py-2 px-3 rounded-lg hover:bg-green-500 transition-all ease-in duration-200 active:scale-90"
+                >
+                  <img
+                    class="w-6"
+                    src="./assets/Logo/shopping-cart 1.png"
+                    alt=""
+                  /><span class="text-md font-semibold">Buy Now</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- section: Travel backpack end -->
+    </main>
+  </body>
+</html>
